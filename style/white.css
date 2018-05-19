@@ -41,6 +41,15 @@ h2.subtitle {
 	position: relative;
 }
 
+.dashend {
+	width: 110px;
+	height: 114px;
+	background: transparent url('../images/closign_time.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
 .dash .digit {
 	font-size: 55pt;
 	font-weight: bold;
