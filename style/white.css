@@ -20,12 +20,8 @@ h2.subtitle {
 }
 
 #container {
-	
+	margin: 50px auto;
 	width: 700px;
-	position: relative;
-	padding-bottom: 56.25%;
-	overflow: hidden;
-	margin-bottom: 4em;
 	color: #555;
 }
 
@@ -74,7 +70,7 @@ h2.subtitle {
 
 #subscribe_form {
 	position: relative;
-} 
+}
 
 #email_field {
 	font-size: 16pt;
