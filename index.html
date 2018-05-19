@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script language="Javascript" type="text/javascript" src="jquery-1.4.4.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="misc.js"></script>
+	<link rel="Stylesheet" type="text/css" href="style/white.css"></link>
+
+	<title>http://www.blueb.co.kr</title>
+</head>
+
+<body>
+
+	<div id="container">
+
+
+		<!-- Countdown dashboard start -->
+		<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<span class="dash_title">주</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash days_dash">
+				<span class="dash_title">일</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">시</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">분</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">초</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+		</div>
+
+
+		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		10,     //일
+						'month': 	1,      //월 
+						'year': 	2051,   //년
+						'hour': 	11,     //시 
+						'min': 		0,      //분
+						'sec': 		0       //초    
+					}
+				});
+				
+				$('#email_field').focus(email_focus).blur(email_blur);
+				$('#subscribe_form').bind('submit', function() { return false; });
+			});
+		</script>
+	
+	</div>
+</body>
+
+</html>
